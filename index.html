@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauri App</title>
+  <script type="module" src="/src/main.ts" defer></script>
+</head>
+
+<body>
+
+
+
+  <div id="terminal" class="xterm"></div>
+  <div>
+    <input id="timestamp-checkbox" type="checkbox" checked><label for="timestamp-checkbox">Timestamp</label>
+    <input id="newline-checkbox" type="checkbox" checked><label for="newline-checkbox">Newline</label>
+  </div>
+  <div>
+    <label>Port Name:</label><input id="port-name-input" type="text"><br>
+    <label>Baud Rate:</label><input id="baud-rate-input" type="text"><br>
+    <button id="open-session-button">Open</button>
+    <button id="close-session-button">Close</button>
+  </div>
+  <div>
+    <input id="port-write-input" type="text">
+    <button id="port-write-button">Write</button>
+  </div>
+  <div>
+    <label>Regex:</label><input id="regex_input">
+    <button id="regex_match_btn">Regex Match</button><br>
+    <ul id="regex_match_result"></p>
+  </div>
+  <div>
+    <p>Buffer usage: </p><p id="usage-p"></p>
+    <button id="save-button">Save</button>
+    <button id="clear-button">Clear</button>
+    <input type="checkbox" id="save-bytes-check"><label>Save in bytes</label>
+    <input type="checkbox" id="dump-check" ><label>Dump</label>
+  </div>
+</body>
+
+</html>
