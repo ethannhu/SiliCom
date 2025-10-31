@@ -11,6 +11,7 @@
     "tauri dev": "tauri dev"
   },
   "dependencies": {
+    "@picocss/pico": "^2.1.1",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-dialog": "^2.4.0",
     "@tauri-apps/plugin-fs": "^2.4.2",
