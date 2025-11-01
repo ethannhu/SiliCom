@@ -2,11 +2,11 @@ import { invoke, Channel } from "@tauri-apps/api/core";
 import { save, message } from '@tauri-apps/plugin-dialog'
 
 export class BufferManager {
-  _usageParagraph = document.getElementById('usage-p') as HTMLParagraphElement;
-  _saveBufferButton = document.getElementById('save-button') as HTMLButtonElement;
+  _usageParagraph = document.getElementById('buffer-usage-output') as HTMLOutputElement;
+  _saveBufferButton = document.getElementById('buffer-save-button') as HTMLButtonElement;
   _saveBytesCheckbox = document.getElementById('save-bytes-check') as HTMLInputElement;
   _dumpCheckbox = document.getElementById('dump-check') as HTMLInputElement;
-  _clearBufferButton = document.getElementById('clear-button') as HTMLButtonElement;
+  _clearBufferButton = document.getElementById('buffer-clear-button') as HTMLButtonElement;
   constructor() {
     setInterval(() => { this.get_usage() }, 1000)
     this._saveBufferButton.addEventListener('click', ()=>{this.saveBuffer()});

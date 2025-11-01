@@ -1,0 +1,16 @@
+{
+    "timestamp-label": "时间戳",
+    "newline-label":"换行",
+    "port-write-button":"写入",
+    "port-name-label":"端口",
+    "baud-rate-label":"波特率",
+    "open-session-button":"开始会话",
+    "close-session-button":"结束会话",
+    "regex-input-label":"正则表达式",
+    "regex-match-button":"匹配",
+    "buffer-usage-p":"缓冲区用量",
+    "buffer-save-button":"转存缓冲区",
+    "buffer-clear-button":"清空缓冲区",
+    "theme-light-button":"亮色页面",
+    "theme-dark-button":"暗色页面"
+}

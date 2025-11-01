@@ -1,0 +1,16 @@
+{
+    "timestamp-label": "Timestamp",
+    "newline-label":"Newline",
+    "port-write-button":"Write",
+    "port-name-label":"Port Name",
+    "baud-rate-label":"Baud Rate",
+    "open-session-button":"Open",
+    "close-session-button":"Close",
+    "regex-input-label":"Regex",
+    "regex-match-button":"Match",
+    "buffer-usage-p":"Buffer Usage",
+    "buffer-save-button":"Save Buffer",
+    "buffer-clear-button":"Clear Buffer",
+    "theme-light-button":"Light Mode",
+    "theme-dark-button":"Dark Mode"
+}

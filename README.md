@@ -1,52 +1,62 @@
+
 # SiliCom
 
 
 
 ![SiliCom Logo (Concept)](https://via.placeholder.com/200x80?text=SiliCom+Serial+Tool)
 
-A lightweight, modern, and cross-platform serial port debugging tool built with Tauri, Rust, and vanilla HTML/CSS/JS.
+一款轻量、现代且跨平台的串口调试工具，采用 Tauri、Rust 以及原生 HTML/CSS/JS 开发。
 
 
-## 🌟 Core Features
+## 🌟 核心特性
 
-### 🚀 Ultra-Lightweight
-
-
-
-* **Minimal Footprint**: Binary sizes start at just \~5MB (depending on platform), far smaller than traditional Electron-based tools.
-
-* **Low Resource Usage**: Uses minimal CPU and memory, ensuring smooth operation even on resource-constrained devices.
-
-### 🎨 Modern UI
+### 🚀 极致轻量
 
 
 
-* **Clean & Intuitive**: A clutter-free interface designed for efficiency, with clear navigation between serial settings, terminal view, and data monitoring.
+* **极小体积**：二进制文件大小仅约 5MB（因平台而异），远小于传统基于 Electron Electron 类工具。
 
-* **Responsive Design**: Adapts seamlessly to different window sizes, from small laptop screens to large monitors.
+* **低资源占用**: ：占用极少的 CPU 和内存，即使在资源受限的设备上也能流畅运行。
 
-* **Dark/Light Modes**: Toggle between color schemes to reduce eye strain during extended use.
-
-### 🔌 Powerful Serial Debugging
+### 🎨 现代界面
 
 
 
-* **Comprehensive Port Support**: Detects and lists all available serial ports (USB, Bluetooth, hardware) with detailed information (baud rate, parity, stop bits, etc.).
+* **简洁直观**：无冗余设计的高效界面，串口设置、终端视图和数据监控区域导航清晰。
 
-* **Flexible Configuration**: Supports baud rates from 1200 to 921600, configurable data bits (5-8), parity (None, Odd, Even), and stop bits (1-2).
+* **明暗主题**：可切换配色方案，减少长时间使用时的视觉疲劳。
 
-* **Real-Time Data Monitoring**:
-
-
-  * View incoming/outgoing data in ASCII, Hex, or Decimal format.
-
-  * Timestamp each data packet for precise timing analysis.
-
-
-### 🌍 Cross-Platform
+### 🔌 强大的串口调试功能
 
 
 
-* **Consistent Experience**: Works seamlessly on Windows, macOS, and Linux.
+* **全面的端口支持**：自动检测并列出所有可用串口（USB、蓝牙、硬件端口），并显示详细信息（波特率、校验位、停止位等）。
 
-* **Native Integration**: Leverages Tauri's native OS bindings for better performance and system integration (e.g., native file dialogs, tray icons).
+* **灵活的参数配置(TODO)**：支持 1200 至 921600 波特率，可配置数据位（5-8）、校验位（无、奇、偶）和停止位（1-2）。
+
+* **实时数据监控**：
+
+
+  * 支持以 ASCII、十六进制或十进制格式查看收发数据。
+
+  * 为每个数据包添加时间戳，便于精确的时序分析。(TODO)
+
+
+### 🌍 跨平台兼容
+
+* **一致的使用体验**：在 Windows、macOS 和 Linux 系统上均能无缝运行。
+* **原生系统集成**：借助 Tauri 的原生系统绑定，实现更优性能和系统级集成（如原生文件对话框、托盘图标等）。
+
+
+
+
+
+
+
+
+
+
+
+
+
+

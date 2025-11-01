@@ -5,6 +5,7 @@ import {TerminalWrapper} from './terminal';
 import {Match} from './match';
 import {SessionManager} from './session';
 import {BufferManager} from './buffer'
+import { ThemeConfigView } from "./settings";
 
 class MainApp {
   _appContainer = document.getElementById('main-grid') as HTMLDivElement;
@@ -31,6 +32,7 @@ class MainApp {
 
 
 const app = new MainApp();
+const themeConfigView = new ThemeConfigView();
 app.outputTerminal.printData("Hello from Blanca");
 
 
@@ -89,6 +91,13 @@ const menu = await Menu.new({
       text: 'Buffer',
       action: () => {
         app.switchView('buffer-container');
+      },
+    }),
+    await MenuItem.new({
+      id: 'theme',
+      text: 'Theme',
+      action: () => {
+        app.switchView('theme-container');
       },
     }),
   ],

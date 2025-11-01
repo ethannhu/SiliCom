@@ -13,31 +13,42 @@
 
 <body>
   <main>
-    <div id="terminal-container" class="container-fluid component active" >
+    <div id="terminal-container" class="container-fluid component active">
       <div id="terminal" class="xterm"></div>
-      <input id="timestamp-checkbox" type="checkbox" checked><label for="timestamp-checkbox">Timestamp</label>
-      <input id="newline-checkbox" type="checkbox" checked><label for="newline-checkbox">Newline</label>
+      <input id="timestamp-checkbox" type="checkbox" checked>
+      <label for="timestamp-checkbox" class="multilang" id="timestamp-label">Timestamp</label>
+      <input id="newline-checkbox" type="checkbox" checked>
+      <label for="newline-checkbox" class="multilang" id="newline-label">Newline</label>
       <fieldset role="group">
         <input id="port-write-input" type="text">
-        <button id="port-write-button">Write</button>
+        <button id="port-write-button" class="multilang">Write</button>
       </fieldset>
     </div>
 
     <div id="session-container" class="container-fluid component">
-      <label>Port Name:</label><input id="port-name-input" type="text"><br>
-      <label>Baud Rate:</label><input id="baud-rate-input" type="text"><br>
-      <button id="open-session-button">Open</button>
-      <button id="close-session-button">Close</button>
+      <label class="multilang" id="port-name-label">Port Name:</label><input id="port-name-input" type="text"><br>
+      <label class="multilang" id="baud-rate-label">Baud Rate:</label><input id="baud-rate-input" type="text"><br>
+      <button class="multilang" id="open-session-button">Open</button>
+      <button class="multilang" id="close-session-button">Close</button>
     </div>
     <div id="match-container" class="container-fluid component">
-      <label>Regex:</label><input id="regex_input">
-      <button id="regex_match_btn">Regex Match</button><br>
-      <ul id="regex_match_result"></ul>
+      <label class="multilang" id="regex-input-label">Regex:</label><input id="regex_input">
+      <button class="multilang" id="regex-match-button">Regex Match</button><br>
+      <ul id="regex-match-result"></ul>
     </div>
     <div id="buffer-container" class="container-fluid component">
-      <p>Buffer usage: <output id="usage-p"></output></p>
-      <button id="save-button">Save</button>
-      <button id="clear-button">Clear</button>
+      <p class="multilang" id="buffer-usage-p">Buffer usage: <output id="buffer-usage-output"></output></p>
+      <button class="multilang" id="buffer-save-button">Save</button>
+      <button class="multilang" id="buffer-clear-button">Clear</button>
+    </div>
+
+    <div id="theme-container" class="container-fluid component">
+      <button class="multilang" id="theme-light-button">Light</button>
+      <button class="multilang" id="theme-dark-button">Dark</button>
+      <select id="locale-select" aria-label="Language" required>
+        <option selected value='en'>English</option>
+        <option value="zh_CN">简体中文</option>
+      </select>
     </div>
   </main>
 

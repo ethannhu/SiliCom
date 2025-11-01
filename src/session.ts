@@ -3,7 +3,7 @@ import { TerminalWrapper, MessageKind } from './terminal';
 import { save, message } from '@tauri-apps/plugin-dialog'
 export class SessionManager {
     id = 'sessionManager';
-    _appContainer = document.getElementById('session-app') as HTMLDivElement;
+    _appContainer = document.getElementById('session-container') as HTMLDivElement;
     _portNameInputElement = document.getElementById('port-name-input') as HTMLInputElement;
     _baudRateInputElement = document.getElementById('baud-rate-input') as HTMLInputElement;
     _openSessionButtonElement = document.getElementById('open-session-button') as HTMLButtonElement;

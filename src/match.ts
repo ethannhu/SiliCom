@@ -3,8 +3,8 @@ import { invoke, Channel } from "@tauri-apps/api/core";
 export class Match {
   _appContainer = document.getElementById('match-app') as HTMLDivElement;
   _regexInput = document.getElementById('regex_input') as HTMLInputElement;
-  _submitButton = document.getElementById('regex_match_btn') as HTMLButtonElement;
-  _resultList = document.getElementById('regex_match_result') as HTMLParagraphElement;;
+  _submitButton = document.getElementById('regex-match-button') as HTMLButtonElement;
+  _resultList = document.getElementById('regex-match-result') as HTMLParagraphElement;;
   constructor() {
     this._submitButton.addEventListener("click", () => { this.match(); })
   }
