@@ -1,5 +1,6 @@
 # Dev utils
-utils/
+utils
+target
 
 # Logs
 logs
